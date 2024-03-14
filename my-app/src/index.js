@@ -10,3 +10,7 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
+
+
+store.dispatch({typo: "ADD_TODO", payloud:{todo:"task1" }})
+console.log(store.getState)

@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+.addTodoForm {
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.addTodoInput {
+  padding: 10px;
+  margin-right: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.addTodoButton {
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.addTodoButton:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoList {
+  list-style: none;
+  padding: 0;
+}
+
+.todoItem {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoItemText {
+  margin: 0;
+}
+
+.todoButton {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todoButton:hover {
+  background-color: #0056b3;
+}
+
+.todoButton.remove {
+  background-color: #dc3545;
+}
+
+.todoButton.remove:hover {
+  background-color: #c82333;
+}
+
+.todoCompleted {
+  text-decoration: line-through;
 }
