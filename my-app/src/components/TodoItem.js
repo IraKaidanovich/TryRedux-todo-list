@@ -10,8 +10,8 @@ const TodoItem = ({ todo, dispatch }) => {
                 {todo.text}
             </p>
             <div className="todoItemButtons">
-                <button className="todoButton toggleButton" onClick={() => dispatch(toggleTodo(todo.id))}>Toggle</button>
-                <button className="todoButton removeButton" onClick={() => dispatch(removeTodo(todo.id))}>Remove</button>
+                <button className="todoButton toggle" onClick={() => dispatch(toggleTodo(todo.id))}>Toggle</button>
+                <button className="todoButton remove" onClick={() => dispatch(removeTodo(todo.id))}>Remove</button>
             </div>
         </div>
     );

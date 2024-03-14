@@ -63,6 +63,14 @@
   background-color: #c82333;
 }
 
+.todoButton.toggle {
+  background-color: #8635dc;
+}
+
+.todoButton.toggle:hover {
+  background-color: #4d13ab;
+}
+
 .todoCompleted {
   text-decoration: line-through;
 }
