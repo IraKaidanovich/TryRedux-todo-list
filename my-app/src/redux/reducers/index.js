@@ -1,8 +1,16 @@
-import { combineReducers } from 'redux';
+import { configureStore } from '@reduxjs/toolkit';
 import todosReducer from './todosReducer';
+import employeeReducer from '../Emloyee';
 
-const rootReducer = combineReducers({
-    todos: todosReducer
-});
+//const rootReducer = combineReducers({
+    //todos: todosReducer,
+    //employee: employeeReducer,
+//});
 
-export default rootReducer;
+const store = configureStore({reducer:{
+    todos: todosReducer,
+    employee: employeeReducer,  
+}})
+
+export default store;
+
