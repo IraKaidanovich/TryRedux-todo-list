@@ -1,9 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { toggleTodo, removeTodo } from '../redux/actions/todoActions';
-import '../App.css'; 
+import { toggleTodo, removeTodo } from '../todoSlice';
+
 
 const TodoItem = ({ todo, dispatch }) => {
+    
     return (
         <div className="todoItem">
             <p className={`todoItemText ${todo.completed ? 'todoCompleted' : ''}`} onClick={() => dispatch(toggleTodo(todo.id))}>

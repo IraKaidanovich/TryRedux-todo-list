@@ -1,6 +1,7 @@
 import React from 'react';
-import AddTodo from './components/AddTodo';
-import TodoList from './components/TodoList';
+import AddTodo from './app/features/todo/components/AddTodo';
+import TodoList from './app/features/todo/components/TodoList';
+import './App.css';
 
 function App() {
   return (
@@ -11,5 +12,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

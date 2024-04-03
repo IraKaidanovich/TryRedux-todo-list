@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import store from './store/ToDoStore';
+import store from './app/store/Store';
 import App from './App';
-import { employeeReducer } from './redux/emloyeeSlice';
+import { addEmployee } from './app/features/employee/emloyeeSlice';
+
 
 ReactDOM.render(
   <Provider store={store}>
@@ -12,5 +13,5 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-store.dispatch(employeeReducer({ name: "Narly", age: 45}))
+store.dispatch(addEmployee({name:'Jon'}));
 
