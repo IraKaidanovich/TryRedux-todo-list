@@ -14,4 +14,5 @@ ReactDOM.render(
 );
 
 store.dispatch(addEmployee({name:'Jon'}));
+store.dispatch({type: "Show_Error", payloud: {error: "User not found"}});
 
