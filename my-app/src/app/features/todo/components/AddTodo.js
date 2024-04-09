@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addTodo as addTodoAction } from '../todoSlice';
+import { createTodo } from '../todoSlice';
 
 const AddTodo = () => {
   const [input, setInput] = useState('');
@@ -9,7 +9,7 @@ const AddTodo = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!input.trim()) return;
-    dispatch(addTodoAction({ id: Date.now(), text: input, completed: false }));
+    dispatch(createTodo({ id: Date.now(), title: input, completed: false }));
     setInput('');
   };
 
