@@ -14,7 +14,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-store.dispatch(addEmployee({name:'Jon'}));
+store.dispatch(addEmployee({name:'Jon', age:18}));
 
 
 store.dispatch(fetchTodos());
